@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "amount": 100,
+    "type": "credit",
+    "date": "2023-01-01T12:00:00Z",
+    "category": "salaire"
+  },
+  {
+    "id": "2",
+    "amount": 20,
+    "type": "debit",
+    "date": "2023-01-02T14:30:00Z",
+    "category": "alimentation"
+  },
+  {
+    "id": "3",
+    "amount": 50,
+    "type": "debit",
+    "date": "2023-01-03T10:45:00Z",
+    "category": "loyer"
+  },
+  {
+    "id": "4",
+    "amount": 75,
+    "type": "credit",
+    "date": "2023-01-04T18:20:00Z",
+    "category": "salaire"
+  },
+  {
+    "id": "5",
+    "amount": 30,
+    "type": "debit",
+    "date": "2023-01-05T09:15:00Z",
+    "category": "alimentation"
+  },
+  {
+    "id": "6",
+    "amount": 120,
+    "type": "credit",
+    "date": "2023-01-06T15:30:00Z",
+    "category": "salaire"
+  },
+  {
+    "id": "7",
+    "amount": 40,
+    "type": "debit",
+    "date": "2023-01-07T11:10:00Z",
+    "category": "alimentation"
+  },
+  {
+    "id": "8",
+    "amount": 60,
+    "type": "debit",
+    "date": "2023-01-08T14:50:00Z",
+    "category": "loyer"
+  },
+  {
+    "id": "9",
+    "amount": 90,
+    "type": "credit",
+    "date": "2023-01-09T17:25:00Z",
+    "category": "salaire"
+  },
+  {
+    "id": "10",
+    "amount": 25,
+    "type": "debit",
+    "date": "2023-01-10T08:40:00Z",
+    "category": "alimentation"
+  }
+]
