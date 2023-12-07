@@ -1,39 +1,25 @@
+document.getElementById('transactionForm').addEventListener('submit', function (event) {
+    event.preventDefault();
 
-function getLastId() {
-    return fetch('../data/transaction.json')
-      .then(response => response.json())
-      .then(data => {
-        const lastItem = data[data.length - 1].id;
-        console.log(lastItem);
-        return lastItem;
-       })
-}
+    const formData = new FormData(this);
+    const transaction = {};
+            
+    formData.forEach((value, key) => {
+        transaction[key] = key === 'amount' ? Number(value) : value;
+    });
 
-const postData = {
-    id: getLastId(),
-    amount: "100€",
-    type: "credit",
-    date: "2023-01-01T12:00:00Z",
-    category: "salaire"
-}
-
-console.log(postData);
-
-function addTransac(){
-    fetch(`/addTransactions`, {
+    fetch(`/transactions`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(postData)
+        body: JSON.stringify(transaction)
     })
     .then(response => response.json())
     .then(data => {
         if (data.success) {
             console.log('Ajout OK');
         }})
-}
 
- window.addEventListener('load', function() {
-     addTransac();
- });
+})
+
